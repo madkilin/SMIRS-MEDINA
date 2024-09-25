@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Edit User - SMIRS Medina</title>
+        <title>Kelola Inventaris - SMIRS Medina</title>
 
         <link
             rel="shortcut icon"
@@ -16,16 +16,16 @@
             type="image/png"
         />
 
-        <link rel="stylesheet" href="assets/extensions/filepond/filepond.css" />
         <link
             rel="stylesheet"
-            href="assets/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.css"
-        />
-        <link
-            rel="stylesheet"
-            href="assets/extensions/toastify-js/src/toastify.css"
+            href="assets/extensions/simple-datatables/style.css"
         />
 
+        <link
+            rel="stylesheet"
+            href="./assets/compiled/css/table-datatable.css"
+        />
+        <link rel="stylesheet" href="assets/extensions/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="./assets/compiled/css/app.css" />
         <link rel="stylesheet" href="./assets/compiled/css/app-dark.css" />
     </head>
@@ -452,14 +452,14 @@
                                 </a>
                             </li>
 
-                            <li class="sidebar-item active has-sub">
+                            <li class="sidebar-item has-sub">
                                 <a href="#" class="sidebar-link">
                                     <i class="bi bi-journal-check"></i>
                                     <span>Form Validation</span>
                                 </a>
 
-                                <ul class="submenu active">
-                                    <li class="submenu-item active">
+                                <ul class="submenu">
+                                    <li class="submenu-item">
                                         <a
                                             href="form-validation-parsley.html"
                                             class="submenu-link"
@@ -517,7 +517,7 @@
                                 </a>
                             </li>
 
-                            <li class="sidebar-item has-sub">
+                            <li class="sidebar-item active has-sub">
                                 <a href="#" class="sidebar-link">
                                     <i
                                         class="bi bi-file-earmark-spreadsheet-fill"
@@ -525,8 +525,8 @@
                                     <span>Datatables</span>
                                 </a>
 
-                                <ul class="submenu">
-                                    <li class="submenu-item">
+                                <ul class="submenu active">
+                                    <li class="submenu-item active">
                                         <a
                                             href="table-datatable.html"
                                             class="submenu-link"
@@ -890,232 +890,87 @@
                                             class="breadcrumb-item active"
                                             aria-current="page"
                                         >
-                                            Kelola User
-                                        </li>
-                                        <li
-                                            class="breadcrumb-item active"
-                                            aria-current="page"
-                                        >
-                                            Edit User
+                                            Kelola Inventaris
                                         </li>
                                     </ol>
                                 </nav>
                             </div>
                         </div>
                     </div>
-
-                    <!-- // Basic multiple Column Form section start -->
-                    <section id="multiple-column-form">
-                        <div class="row match-height">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                    <h4 class="card-title">Edit User</h4>
-                                    <p class="text-subtitle text-muted">
-                                        Edit/ubah data user sesuai kebutuhan dan
-                                        pastikan data yang dimasukkan sudah benar.
-                                    </p>
+                    <section class="section">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Kelola Inventaris</h5>
+                                <div class="buttons">
+                                    <a href="inventory-add.html" class="btn icon btn-primary"><i class="bi bi-plus-circle me-2"></i>Tambah</a>
                                 </div>
-                                    <div class="card-content">
-                                        
-                                        <div class="card-body">
-                                            <form
-                                                class="form"
-                                                data-parsley-validate
-                                            >
-                                                <div class="row">
-                                                    <div
-                                                        class="col-md-6 col-12"
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped" id="table1">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama Barang</th>
+                                            <th>Kategori</th>
+                                            <th>Kuantitas</th>
+                                            <th>Satuan</th>
+                                            <th>Tanggal Pengadaan</th>
+                                            <th>Pencatat</th>
+                                            <th>Pemasok</th>
+                                            <th>Gambar</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Komputer All in One
+                                            </td>
+                                            <td>
+                                                Devide
+                                            </td>
+                                            <td>
+                                                10
+                                            </td>
+                                            <td>Pcs</td>
+                                            <td>10/10/2024</td>
+                                            <td>
+                                                Mochammad Agus Dharma Kilin
+                                            </td>
+                                            <td>
+                                                Sehati
+                                            </td>
+                                            <td>
+                                                <img
+                                                    src="assets/img/avatars/1.png"
+                                                    alt="Avatar"
+                                                    width="32"
+                                                    height="32"
+                                                />
+                                            </td>
+                                            <td>
+                                                <div
+                                                    class="d-flex justify-content-start"
+                                                >
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary me-1 mb-1"
                                                     >
-                                                        <div
-                                                            class="form-group mandatory"
-                                                        >
-                                                            <label
-                                                                for="name-column"
-                                                                class="form-label"
-                                                                >Nama
-                                                                </label
-                                                            >
-                                                            <input
-                                                                type="text"
-                                                                id="name-column"
-                                                                class="form-control"
-                                                                placeholder="Nama Lengkap"
-                                                                name="name-column"
-                                                                data-parsley-required="true"
-                                                            />
-                                                        </div>
-                                                    </div>
-
-                                                    <div
-                                                        class="col-md-6 col-12"
+                                                    <i class="bi bi-pencil-square"></i>
+                                                    </button>
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-danger me-1 mb-1"
                                                     >
-                                                        <div class="form-group mandatory">
-                                                            <label
-                                                                for="phone-column"
-                                                                class="form-label"
-                                                                >Nomor Telepon</label
-                                                            >
-                                                            <input
-                                                                type="tel"
-                                                                id="phone-column"
-                                                                class="form-control"
-                                                                placeholder="Nomor Telepon/WhatsApp"
-                                                                name="phone-column"
-                                                                data-parsley-required="true"
-                                                            />
-                                                        </div>
-                                                    </div>
-
-                                                    <div
-                                                        class="col-md-6 col-12"
-                                                    >
-                                                        <div
-                                                            class="form-group mandatory"
-                                                        >
-                                                            <label
-                                                                for="email-id-column"
-                                                                class="form-label"
-                                                                >Email</label
-                                                            >
-                                                            <input
-                                                                type="email"
-                                                                id="email-id-column"
-                                                                class="form-control"
-                                                                name="email-id-column"
-                                                                placeholder="Alamat Email"
-                                                                data-parsley-required="true"
-                                                            />
-                                                        </div>
-                                                    </div>
-
-                                                    <div
-                                                        class="col-md-6 col-12"
-                                                    >
-                                                        <div
-                                                            class="form-group mandatory"
-                                                        >
-                                                            <label
-                                                                for="password-column"
-                                                                class="form-label"
-                                                                >Password</label
-                                                            >
-                                                            <input
-                                                                type="password"
-                                                                id="password-column"
-                                                                class="form-control"
-                                                                placeholder="Minimal 12 Karakter"
-                                                                name="password-column"
-                                                                data-parsley-minlength="12"
-                                                                data-parsley-required="true"
-                                                            />
-                                                        </div>
-                                                    </div>
-
-                                                    <div
-                                                        class="col-md-6 col-12"
-                                                    >
-                                                        <fieldset
-                                                            class="form-group mandatory"
-                                                        >
-                                                            <label
-                                                                for="division-column"
-                                                                class="form-label"
-                                                                >Divisi</label
-                                                            >
-                                                            <select
-                                                                class="form-select"
-                                                                id="basicSelect"
-                                                            >
-                                                                <option>
-                                                                    IT
-                                                                </option>
-                                                                <option>
-                                                                    Perawat
-                                                                </option>
-                                                                <option>
-                                                                    Farmasi
-                                                                </option>
-                                                                <option>
-                                                                    Kasir
-                                                                </option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-                                                    <div
-                                                        class="col-md-6 col-12"
-                                                    >
-                                                        <fieldset
-                                                            class="form-group mandatory"
-                                                        >
-                                                            <label
-                                                                for="role-column"
-                                                                class="form-label"
-                                                                >Peran</label
-                                                            >
-                                                            <select
-                                                                class="form-select"
-                                                                id="basicSelect"
-                                                            >
-                                                                <option>
-                                                                    Admin
-                                                                </option>
-                                                                <option>
-                                                                    Head
-                                                                </option>
-                                                                <option>
-                                                                    Inventator
-                                                                </option>
-                                                            </select>
-                                                        </fieldset>
-                                                    </div>
-
-                                                    <div
-                                                        class="col-md-6 col-12"
-                                                    >
-                                                        <h6 class="card-title">
-                                                            Foto Profil
-                                                        </h6>
-
-                                                        <p class="card-text">
-                                                            Gunakan foto dengan rasio 1:1 agar tidak terpotong dan pastikan ukuran foto maksimal 500KB.
-                                                        </p>
-                                                        <p></p>
-                                                        <input
-                                                            type="file"
-                                                            class="image-crop-filepond"
-                                                            image-crop-aspect-ratio="1:1"
-                                                            data-max-file-size="500KB"
-                                                        />
-                                                    </div>
-
-                                                    <div>
-                                                        <div
-                                                            class="col-12 d-flex justify-content-end"
-                                                        >
-                                                            <button
-                                                                type="submit"
-                                                                class="btn btn-primary me-1 mb-1"
-                                                            >
-                                                                Simpan
-                                                            </button>
-                                                            <button
-                                                                type="reset"
-                                                                class="btn btn-light-secondary me-1 mb-1"
-                                                            >
-                                                                Atur Ulang
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    <i class="bi bi-trash-fill"></i>
+                                                    </button>
                                                 </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </section>
-                    <!-- // Basic multiple Column Form section end -->
                 </div>
 
                 <footer>
@@ -1140,19 +995,7 @@
 
         <script src="assets/compiled/js/app.js"></script>
 
-        <script src="assets/extensions/jquery/jquery.min.js"></script>
-        <script src="assets/extensions/parsleyjs/parsley.min.js"></script>
-        <script src="assets/static/js/pages/parsley.js"></script>
-
-        <script src="assets/extensions/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js"></script>
-        <script src="assets/extensions/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js"></script>
-        <script src="assets/extensions/filepond-plugin-image-crop/filepond-plugin-image-crop.min.js"></script>
-        <script src="assets/extensions/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js"></script>
-        <script src="assets/extensions/filepond-plugin-image-filter/filepond-plugin-image-filter.min.js"></script>
-        <script src="assets/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js"></script>
-        <script src="assets/extensions/filepond-plugin-image-resize/filepond-plugin-image-resize.min.js"></script>
-        <script src="assets/extensions/filepond/filepond.js"></script>
-        <script src="assets/extensions/toastify-js/src/toastify.js"></script>
-        <script src="assets/static/js/pages/filepond.js"></script>
+        <script src="assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
+        <script src="assets/static/js/pages/simple-datatables.js"></script>
     </body>
 </html>

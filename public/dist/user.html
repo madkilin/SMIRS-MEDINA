@@ -25,6 +25,7 @@
             rel="stylesheet"
             href="./assets/compiled/css/table-datatable.css"
         />
+        <link rel="stylesheet" href="assets/extensions/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="./assets/compiled/css/app.css" />
         <link rel="stylesheet" href="./assets/compiled/css/app-dark.css" />
     </head>
@@ -870,11 +871,10 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-12 col-md-6 order-md-1 order-last">
-                                <h3>DataTable</h3>
+                                <h3>SMIRS Medina</h3>
                                 <p class="text-subtitle text-muted">
-                                    A sortable, searchable, paginated table
-                                    without dependencies thanks to
-                                    simple-datatables.
+                                    Sistem Manajemen Inventaris Rumah
+                                    Sakit Medina
                                 </p>
                             </div>
                             <div class="col-12 col-md-6 order-md-2 order-first">
@@ -890,7 +890,7 @@
                                             class="breadcrumb-item active"
                                             aria-current="page"
                                         >
-                                            DataTable
+                                            Kelola User
                                         </li>
                                     </ol>
                                 </nav>
@@ -899,8 +899,11 @@
                     </div>
                     <section class="section">
                         <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title">Simple Datatable</h5>
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Kelola User</h5>
+                                <div class="buttons">
+                                    <a href="user-add.html" class="btn icon btn-primary"><i class="bi bi-person-plus-fill me-2"></i>Tambah</a>
+                                </div>
                             </div>
                             <div class="card-body">
                                 <table class="table table-striped" id="table1">
@@ -947,14 +950,14 @@
                                                     <button
                                                         type="submit"
                                                         class="btn btn-primary me-1 mb-1"
-                                                    >Edit
-                                                        
+                                                    >
+                                                    <i class="bi bi-person-fill-gear"></i>
                                                     </button>
                                                     <button
                                                         type="submit"
                                                         class="btn btn-danger me-1 mb-1"
                                                     >
-                                                        Hapus
+                                                    <i class="bi bi-trash-fill"></i>
                                                     </button>
                                                 </div>
                                             </td>
@@ -969,15 +972,14 @@
                 <footer>
                     <div class="footer clearfix mb-0 text-muted">
                         <div class="float-start">
-                            <p>2023 &copy; Mazer</p>
+                            <p>
+                                2024 &copy; SMIRS Medina
+                            </p>
                         </div>
                         <div class="float-end">
                             <p>
-                                Crafted with
-                                <span class="text-danger"
-                                    ><i class="bi bi-heart-fill icon-mid"></i
-                                ></span>
-                                by <a href="https://saugi.me">Saugi</a>
+                                Rumah Sakit <span class="text-danger"></span>
+                                <a href="https://www.rsmedina.id/">Medina</a>
                             </p>
                         </div>
                     </div>
