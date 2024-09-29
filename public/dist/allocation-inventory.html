@@ -232,10 +232,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h4 class="card-title">
-                                        Alokasikan Inventaris 
+                                        Alokasi Inventaris 
                                     </h4>
                                     <p class="text-subtitle text-muted">
-                                        Alokasikan Inventaris yang sesuai dengan divisi dan tempat yang sesuai.
+                                        Alokasikan Inventaris/barang sesuai dengan tempat yang sesuai.
                                     </p>
                                 </div>
                                 <div class="card-content">
@@ -244,8 +244,9 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-12">
                                                     <fieldset class="form-group mandatory">
-                                                        <label for="inventory-which" class="form-label">Pilih Inventaris yang belum di alokasikan</label>
+                                                        <label for="inventory-which" class="form-label">Pilih Inventaris</label>
                                                         <select class="form-select" id="basicSelect">
+                                                            <option value="" disabled selected>Silakan pilih inventaris/barang yang akan di alokasikan</option>
                                                             <option>
                                                                 Inventaris 1
                                                             </option>
@@ -274,7 +275,7 @@
                                                                 Inventaris ...
                                                             </option>
                                                             <option>
-                                                               Inventaris N
+                                                                Inventaris N
                                                             </option>
                                                         </select>
                                                     </fieldset>
@@ -289,44 +290,42 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-12">
-                                                    <fieldset class="form-group mandatory">
-                                                        <label for="category-column" class="form-label">Tempat Pengalokasian Inventaris</label>
-                                                        <select class="form-select" id="basicSelect">
-                                                            <option value="square">
-                                                                Tempat 1
-                                                            </option>
-                                                            <option value="rectangle">
-                                                                Tempat 2
-                                                            </option>
-                                                            <option value="rombo">
-                                                                Tempat 3
-                                                            </option>
-                                                            <option value="romboid">
-                                                                Tempat ...
-                                                            </option>
-                                                            <option value="romboid">
-                                                                Tempat N
-                                                            </option>
-                                                        </select>
-                                                    </fieldset>
+                                                    <div class="form-group mandatory">
+                                                        <label for="location-column" class="form-label">Lokasi</label>
+                                                        <div class="form-group">
+                                                            <select class="choices form-select">
+                                                                <option value="" disabled selected>Silakan pilih lokasi yang akan di alokasikan</option>
+                                                                <option value="rs-1-pendaftaran">
+                                                                    RS-1 Pendaftaran
+                                                                </option>
+                                                                <option value="rs-2-server">
+                                                                    RS-2 Server
+                                                                </option>
+                                                                <option value="rs-3-sekretaris">
+                                                                    RS-3 sekretaris
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group mandatory">
-                                                        <label for="supplier-column" class="form-label">Divisi Pengurus</label>
+                                                        <label for="divisi-column" class="form-label">Divisi</label>
                                                         <div class="form-group">
                                                             <select class="choices form-select">
-                                                                <option value="sehati">
+                                                                <option value="" disabled selected>Silakan pilih divisi yang akan bertanggung jawab</option>
+                                                                <option value="it">
                                                                     IT
                                                                 </option>
-                                                                <option value="yoma">
-                                                                    Gudang
+                                                                <option value="perawat">
+                                                                    Perawat
                                                                 </option>
-                                                                <option value="cipta">
+                                                                <option value="farmasi">
                                                                     Farmasi
                                                                 </option>
-                                                                <option value="indah">
-                                                                    RM
+                                                                <option value="pendaftaran">
+                                                                    Pendaftaran
                                                                 </option>
                                                                 <option value="lainnya">
                                                                     Lainnya
@@ -335,7 +334,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
                                             <div>
                                                 <div class="col-12 d-flex justify-content-end">
