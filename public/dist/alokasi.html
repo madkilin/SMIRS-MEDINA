@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tambah Inventaris - SMIRS Medina</title>
+    <title>Alokasi Inventaris - SMIRS Medina</title>
 
     <link rel="shortcut icon" href="./assets/compiled/svg/favicon.svg" type="image/x-icon" />
     <link rel="shortcut icon"
@@ -74,8 +74,6 @@
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
-
-
                         </li>
 
                         <li class="sidebar-item  has-sub">
@@ -85,13 +83,11 @@
                             </a>
 
                             <ul class="submenu ">
-
                                 <li class="submenu-item  ">
                                     <a href="user.html" class="submenu-link">
                                         <i class="fa-solid fa-user"></i>
                                         User
                                     </a>
-
                                 </li>
 
                                 <li class="submenu-item  ">
@@ -111,7 +107,7 @@
 
                             <ul class="submenu ">
 
-                                <li class="submenu-item active">
+                                <li class="submenu-item">
                                     <a href="inventory.html" class="submenu-link">
                                         <i class="fa-solid fa-boxes-stacked"></i>
                                         Inventaris
@@ -128,7 +124,7 @@
                             </ul>
                         </li>
 
-                        <li class="sidebar-item  has-sub">
+                        <li class="sidebar-item  has-sub active">
                             <a href="#" class='sidebar-link'>
                                 <i class="fa-solid fa-truck-ramp-box"></i>
                                 <span>Alokasi Inventaris</span>
@@ -136,7 +132,7 @@
 
                             <ul class="submenu ">
 
-                                <li class="submenu-item  ">
+                                <li class="submenu-item active">
                                     <a href="alokasi.html" class="submenu-link">
                                         <i class="fa-solid fa-location-crosshairs"></i>
                                         Alokasi
@@ -218,10 +214,10 @@
                                         <a href="index.html">Dashboard</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">
-                                        Kelola Inventaris
+                                        Alokasi Inventaris
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">
-                                        Tambah Inventaris
+                                        Alokasi
                                     </li>
                                 </ol>
                             </nav>
@@ -236,12 +232,10 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h4 class="card-title">
-                                        Tambah Inventaris
+                                        Alokasikan Inventaris 
                                     </h4>
                                     <p class="text-subtitle text-muted">
-                                        Tambahkan inventaris/barang baru
-                                        sesuai kebutuhan dan pastikan data
-                                        yang dimasukkan sudah benar.
+                                        Alokasikan Inventaris yang sesuai dengan divisi dan tempat yang sesuai.
                                     </p>
                                 </div>
                                 <div class="card-content">
@@ -249,26 +243,42 @@
                                         <form class="form" data-parsley-validate>
                                             <div class="row">
                                                 <div class="col-md-6 col-12">
-                                                    <div class="form-group mandatory">
-                                                        <label for="name-column" class="form-label">Nama
-                                                        </label>
-                                                        <input type="text" id="name-column" class="form-control"
-                                                            placeholder="Nama Barang" name="name-column"
-                                                            data-parsley-required="true" />
-                                                    </div>
+                                                    <fieldset class="form-group mandatory">
+                                                        <label for="inventory-which" class="form-label">Pilih Inventaris yang belum di alokasikan</label>
+                                                        <select class="form-select" id="basicSelect">
+                                                            <option>
+                                                                Inventaris 1
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 2
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 3
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 4
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 5
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 6
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 7
+                                                            </option>
+                                                            <option>
+                                                                Inventaris 8
+                                                            </option>
+                                                            <option>
+                                                                Inventaris ...
+                                                            </option>
+                                                            <option>
+                                                               Inventaris N
+                                                            </option>
+                                                        </select>
+                                                    </fieldset>
                                                 </div>
-
-                                                <div class="col-md-6 col-12">
-                                                    <div class="form-group mandatory">
-                                                        <label for="date-column" class="form-label">Tanggal
-                                                            Pengadaan</label>
-                                                        <input type="date" id="date-column"
-                                                            class="form-control mb-3 flatpickr-no-config"
-                                                            placeholder="Pilih Tanggal" name="date-column"
-                                                            data-parsley-required="true" />
-                                                    </div>
-                                                </div>
-
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group mandatory">
                                                         <label for="quantity-column"
@@ -278,67 +288,24 @@
                                                             data-parsley-required="true" />
                                                     </div>
                                                 </div>
-
                                                 <div class="col-md-6 col-12">
                                                     <fieldset class="form-group mandatory">
-                                                        <label for="unit-column" class="form-label">Satuan</label>
-                                                        <select class="form-select" id="basicSelect">
-                                                            <option>
-                                                                Unit (pcs)
-                                                            </option>
-                                                            <option>
-                                                                Kilogram
-                                                                (kg)
-                                                            </option>
-                                                            <option>
-                                                                Gram (g)
-                                                            </option>
-                                                            <option>
-                                                                Liter (L)
-                                                            </option>
-                                                            <option>
-                                                                Mililiter
-                                                                (mL)
-                                                            </option>
-                                                            <option>
-                                                                Meter (m)
-                                                            </option>
-                                                            <option>
-                                                                Box
-                                                            </option>
-                                                            <option>
-                                                                Pack
-                                                            </option>
-                                                            <option>
-                                                                Rim
-                                                            </option>
-                                                            <option>
-                                                                Cubic meter
-                                                                (m&sup3;)
-                                                            </option>
-                                                        </select>
-                                                    </fieldset>
-                                                </div>
-
-                                                <div class="col-md-6 col-12">
-                                                    <fieldset class="form-group mandatory">
-                                                        <label for="category-column" class="form-label">Kategori</label>
-
+                                                        <label for="category-column" class="form-label">Tempat Pengalokasian Inventaris</label>
                                                         <select class="form-select" id="basicSelect">
                                                             <option value="square">
-                                                                Device
+                                                                Tempat 1
                                                             </option>
                                                             <option value="rectangle">
-                                                                Elektronik
+                                                                Tempat 2
                                                             </option>
                                                             <option value="rombo">
-                                                                Kesehatan
+                                                                Tempat 3
                                                             </option>
                                                             <option value="romboid">
-                                                                Perlengkapan
+                                                                Tempat ...
                                                             </option>
                                                             <option value="romboid">
-                                                                Lainnya
+                                                                Tempat N
                                                             </option>
                                                         </select>
                                                     </fieldset>
@@ -346,20 +313,20 @@
 
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group mandatory">
-                                                        <label for="supplier-column" class="form-label">Pemasok</label>
+                                                        <label for="supplier-column" class="form-label">Divisi Pengurus</label>
                                                         <div class="form-group">
                                                             <select class="choices form-select">
                                                                 <option value="sehati">
-                                                                    Sehati
+                                                                    IT
                                                                 </option>
                                                                 <option value="yoma">
-                                                                    Yoma
+                                                                    Gudang
                                                                 </option>
                                                                 <option value="cipta">
-                                                                    Cipta
+                                                                    Farmasi
                                                                 </option>
                                                                 <option value="indah">
-                                                                    Indah
+                                                                    RM
                                                                 </option>
                                                                 <option value="lainnya">
                                                                     Lainnya
@@ -368,21 +335,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6 col-12">
-                                                <h6 class="card-title">
-                                                    Foto Barang
-                                                </h6>
-
-                                                <p class="card-text">
-                                                    Gunakan foto dengan
-                                                    rasio 3:4 agar tidak
-                                                    terpotong dan pastikan
-                                                    ukuran foto maksimal
-                                                    500KB.
-                                                </p>
-                                                <input type="file" class="image-crop-filepond"
-                                                    image-crop-aspect-ratio="3:4" data-max-file-size="500KB" />
                                             </div>
 
                                             <div>
