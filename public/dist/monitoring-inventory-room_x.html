@@ -166,7 +166,7 @@
                                 <li class="submenu-item active">
                                     <a href="monitoring-history.html" class="submenu-link">
                                         <i class="fa-solid fa-eye"></i>
-                                        Monitoring & Checking
+                                        Cek Inventaris
                                     </a>
                                 </li>
 
@@ -225,8 +225,9 @@
                     <div class="card-header">
                         <div class="actions">
                             <button class="btn btn-primary" onclick="exportData()">Export</button>
+                            <a href="histori-room_x.html">
                             <button class="btn btn-secondary">Histori</button>
-                            <button class="btn btn-secondary">Kembali</button>
+                            </a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -253,16 +254,27 @@
                                         <td>Sehati Garut</td>
                                         <td>3</td>
                                         <td>
-                                            <select class="form-select">
-                                                <option value="Pilih">Pilihan</option>
-                                                <option value="Baik">Baik</option>
-                                                <option value="Rusak">Rusak</option>
-                                                <option value="Perlu Perbaikan">Perlu Perbaikan</option>
-                                                <option value="Hilang">Hilang</option>
-                                            </select>
+                                            <fieldset class="form-group mandatory">
+                                                <label for="condition-column" class="form-label">Kondisi :</label>
+                                                <select class="form-select" id="basicSelect">
+                                                    <option>
+                                                        Pilihan
+                                                    </option>
+                                                    <option>
+                                                        Baik
+                                                    </option>
+                                                    <option>
+                                                        Perlu Perbaikan
+                                                    </option>
+                                                    <option>
+                                                        Hilang
+                                                    </option>
+
+                                                </select>
+                                            </fieldset>
                                         </td>
                                         <td>
-                                            <input class="form-control" placeholder ="Deskripsi" type="text" name="deskription-column">
+                                            <input class="form-control" placeholder ="Keterangan" type="text" name="deskription-column">
                                         </td>
                                         <td><img src="https://www.healthcareitnews.com/sites/hitn/files/surgery-monitors-stock-712.jpg"
                                                 style="height: 50px;"></td>
@@ -275,16 +287,26 @@
                                         <td>Sehati Garut</td>
                                         <td>3</td>
                                         <td>
-                                            <select>
-                                                <option value="Pilih">Pilihan</option>
-                                                <option value="Baik">Baik</option>
-                                                <option value="Rusak">Rusak</option>
-                                                <option value="Perlu Perbaikan">Perlu Perbaikan</option>
-                                                <option value="Hilang">Hilang</option>
-                                            </select>
+                                            <fieldset class="form-group mandatory">
+                                                <label for="condition-column" class="form-label">Kondisi :</label>
+                                                <select class="form-select" id="basicSelect">
+                                                    <option>
+                                                        Pilihan
+                                                    </option>
+                                                    <option>
+                                                        Baik
+                                                    </option>
+                                                    <option>
+                                                        Perlu Perbaikan
+                                                    </option>
+                                                    <option>
+                                                        Hilang
+                                                    </option>
+                                                </select>
+                                            </fieldset>
                                         </td>
                                         <td>
-                                            <input class="form-control" placeholder ="Deskripsi" type="text" name="deskription-column">
+                                            <input class="form-control" placeholder ="Keterangan" type="text" name="deskription-column">
                                         </td>
                                         <td><img src="https://www.healthcareitnews.com/sites/hitn/files/surgery-monitors-stock-712.jpg"
                                                 style="height: 50px;"></td>
@@ -296,18 +318,26 @@
                                         <td>Sehati Garut</td>
                                         <td>3</td>
                                         <td>
-                                            <select>
-                                                <option value="Pilih">Pilihan</option>
-                                                <option value="Baik">Baik</option>
-                                                <option value="Rusak">Rusak</option>
-                                                <option value="Perlu Perbaikan">Perlu Perbaikan</option>
-                                                <option value="Hilang">Hilang</option>
-                                            </select>
+                                            <fieldset class="form-group mandatory">
+                                                <label for="condition-column" class="form-label">Kondisi :</label>
+                                                <select class="form-select" id="basicSelect">
+                                                    <option>
+                                                        Pilihan
+                                                    </option>
+                                                    <option>
+                                                        Baik
+                                                    </option>
+                                                    <option>
+                                                        Perlu Perbaikan
+                                                    </option>
+                                                    <option>
+                                                        Hilang
+                                                    </option>
+                                                </select>
+                                            </fieldset>
                                         </td>
                                         <td>
-                                            <form>
-                                                <input text="text" name="deskripsi_checking">
-                                            </form>
+                                            <input class="form-control" placeholder ="Keterangan" type="text" name="deskription-column">
                                         </td>
                                         <td><img src="https://www.healthcareitnews.com/sites/hitn/files/surgery-monitors-stock-712.jpg"
                                                 style="height: 50px;"></td>
