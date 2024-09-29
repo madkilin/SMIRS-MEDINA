@@ -146,7 +146,6 @@
                                         <i class="bi bi-geo-alt-fill"></i>
                                         Lokasi
                                     </a>
-
                                 </li>
                             </ul>
                         </li>
@@ -211,7 +210,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                     <div class="stats-icon purple mb-2">
-                                        <i class="iconly-boldShow"></i>
+                                        <i class="fa-solid fa-boxes-stacked"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
@@ -228,7 +227,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                     <div class="stats-icon blue mb-2">
-                                        <i class="iconly-boldProfile"></i>
+                                        <i class="fa-solid fa-user"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
@@ -245,7 +244,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                     <div class="stats-icon green mb-2">
-                                        <i class="iconly-boldAdd-User"></i>
+                                        <i class="fa-solid fa-sitemap"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
@@ -262,7 +261,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
                                     <div class="stats-icon red mb-2">
-                                        <i class="iconly-boldBookmark"></i>
+                                        <i class="fa-solid fa-shop"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
@@ -275,17 +274,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Profile Visit</h4>
-                        </div>
-                        <div class="card-body">
-                            <div id="chart-profile-visit"></div>
-                        </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Jumlah Inventaris setiap kategori</h4>
                     </div>
+                    <div class="card-body">
+                      <div id="chart-inventaris-kategori"></div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Jumlah user setiap divisi</h4>
+                    </div>
+                    <div class="card-body">
+                      <div id="chart-user-divisi"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="row">
                 <div class="col-12 col-xl-4">
                     <div class="card">
@@ -487,7 +496,7 @@
 <!-- Need: Apexcharts -->
 <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
 <script src="assets/static/js/pages/dashboard.js"></script>
-
+<script src="assets\compiled\js\dashboard-pie_chart.js"></script>
 </body>
 
 </html>
